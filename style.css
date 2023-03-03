@@ -1,0 +1,60 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    height: 100%;
+}
+
+.imageContainer{
+    height: 100%;
+    background-color: blue;
+    flex: 1 0 10vw;
+    position: relative;
+}
+
+.video{
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    object-fit:cover;
+    top: 0;
+}
+
+.creditArtist{
+    position: absolute;
+    height: 2vw;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .imageContainer{
+        display: none;
+    }
+    
+}
+
+.formContainer{
+    height: 100%;
+    background-color: tomato;
+    flex: 2 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formCell {
+    height: 40%;
+    width: 100%;
+    background-color: blanchedalmond;
+}
