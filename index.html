@@ -29,12 +29,16 @@
             <div class="creditArtist">Video by Daniel Ponomarev on Pexels</div>
         </div>
         <div class="formContainer">
-            <form action="" autocomplete="off">
+            <div class="information">
+                <p>This is not a real online service! I'm repeating this is not a real service! but you want it.</p>
+                <p>You <em>know</em> you want it</p>
+            </div>
+            <form action="" method="post" autocomplete="off">
                 <div class="formBlock">
                     <div class="formColumn">
                         <div class="inputColumn">
                             <label for="first_name">FIRST NAME</label>
-                            <input type="text" id="first_name">
+                            <input minlength="2" maxlength="20" type="text" id="first_name">
                         </div>
                         <div class="inputColumn">
                             <label for="email">EMAIL</label>
@@ -42,27 +46,30 @@
                         </div>
                         <div class="inputColumn">
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" required>
+                            <input minlength="6" maxlength="24" type="password" id="password" required>
                         </div>
                     </div>
 
                     <div class="formColumn">
                         <div class="inputColumn">
-                            <label for="password">LAST NAME</label>
-                            <input type="text" id="last_name" required>
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" maxlength="20" id="last_name" required>
                         </div>
                         <div class="inputColumn">
-                            <label for="password">PHONE NUMBER</label>
-                            <input type="tel" id="phone">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" min="9" id="phone">
                         </div>
                         <div class="inputColumn">
-                            <label for="password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirmpas" required>
+                            <label for="confirmpas">CONFIRM PASSWORD</label>
+                            <input minlength="6" type="password" maxlength="24" id="confirmpas" required>
                         </div>
                     </div>
                 </div>
                 <button type="submit">Create Account</button>
             </form>
+            <div class="login">
+                <p>Already have an account? <a>Log in</a></p>
+            </div>
         </div>
     </div>
 
