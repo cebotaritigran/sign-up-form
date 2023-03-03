@@ -5,56 +5,82 @@ body {
     padding: 0;
 }
 
-.container{
+.container {
     display: flex;
     height: 100%;
 }
 
-.imageContainer{
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+
+/* LEFT CONTAINER */
+.imageContainer {
     height: 100%;
     background-color: blue;
     flex: 1 0 10vw;
     position: relative;
 }
 
-.video{
+.video {
     position: absolute;
     overflow: hidden;
     height: 100%;
     width: 100%;
     background-size: cover;
-    object-fit:cover;
+    object-fit: cover;
     top: 0;
 }
 
-.creditArtist{
+.logo {
     position: absolute;
-    height: 2vw;
-    width: 100%;
-    background-color: black;
+    top: 10px;
+    left: 20px;
+    font-size: 38px;
     color: white;
-    text-align: center;
-    bottom: 5px;
+    font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    opacity: 0.7;
+}
+
+.creditArtist {
+    position: absolute;
+    height: 1vw;
+    width: 100%;
+    background-color: rgb(22, 21, 21, .1);
+    color: rgb(180, 175, 175);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    bottom: 10px;
 }
 
 @media screen and (max-width: 600px) {
-    .imageContainer{
+    .imageContainer {
         display: none;
     }
-    
+
 }
 
-.formContainer{
+/* RIGHT CONTAINER */
+.formContainer {
     height: 100%;
-    background-color: tomato;
+    background-color: rgb(234, 240, 248);
     flex: 2 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.formCell {
-    height: 40%;
+.formBlock {
+    height: 30vh;
     width: 100%;
-    background-color: blanchedalmond;
+    background-color: rgb(243, 241, 237);
+    box-shadow: 4px 4px 6px rgb(220, 219, 219);
+}
+
+.formColumn{
+    display: flex;
+    flex-direction: column;
 }
