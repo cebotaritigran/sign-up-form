@@ -29,7 +29,7 @@ button {
 /* LEFT CONTAINER */
 .imageContainer {
     height: 100%;
-    background-color: blue;
+    background-color: rgb(171, 171, 249);
     flex: 1 0 10vw;
     position: relative;
 }
